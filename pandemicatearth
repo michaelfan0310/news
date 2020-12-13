@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+
+<html> 
+    <head>
+        <title>Pandemicatearth</title> 
+    <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_animations -->
+
+<canvas id="canvas" width="1300" height="900"></canvas>
+ 
+</head>
+<style>
+body {    background-color:aqua;}
+
+#topic{ position:absolute;
+top:20%;
+right:20%;}
+
+h1 {   
+color:blue;
+
+}
+h2{color:crimson;}
+h3{color:crimson;}
+
+
+</style>
+
+ <body>
+     <div id="topic">
+<h1>Pandemic at The Earth</h1>
+<h2>Global Cases:        72,517,031              </h2>  
+<h3>USA: 16,660,630 </h3>         
+<h3>CANADA: 458,804      </h3></div>
+
+    <p align="center"> 
+	<!--This draws the Canvas on the webpage -->
+      <canvas id="mycanvas"></canvas> 
+    </p>
+ </body>
+ 
+ <!-- Run all the JavaScript stuff -->
+ <!-- Include the processing.js library -->
+ 
+
+ 
+ <script>
+    var sun = new Image();
+var moon = new Image();
+var earth = new Image();
+function init() {
+  sun.src = 'https://mdn.mozillademos.org/files/1456/Canvas_sun.png';
+  moon.src = 'https://mdn.mozillademos.org/files/1443/Canvas_moon.png';
+  earth.src = 'https://mdn.mozillademos.org/files/1429/Canvas_earth.png';
+  window.requestAnimationFrame(draw);
+}
+
+function draw() {
+  var ctx = document.getElementById('canvas').getContext('2d');
+
+  ctx.globalCompositeOperation = 'destination-over';
+  ctx.clearRect(0, 0, 1000, 900); // clear canvas
+
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+  ctx.strokeStyle = 'rgba(0, 153, 255, 0.4)';
+  ctx.save();
+  ctx.translate(300, 300);
+
+  // Earth
+  var time = new Date();
+  ctx.rotate(((2 * Math.PI) / 60) * time.getSeconds() + ((2 * Math.PI) / 60000) * time.getMilliseconds());
+  ctx.translate(210, 0);
+  ctx.fillRect(0, -24, 100, 48); // Shadow
+  ctx.drawImage(earth, -24, -24);
+
+  // Moon
+  ctx.save();
+  ctx.rotate(((2 * Math.PI) / 6) * time.getSeconds() + ((2 * Math.PI) / 6000) * time.getMilliseconds());
+  ctx.translate(0, 28.5);
+  ctx.drawImage(moon, -7, -7);
+  ctx.restore();
+
+  ctx.restore();
+  
+  ctx.beginPath();
+  ctx.arc(300, 300, 210, 0, Math.PI * 2, false); // Earth orbit
+  ctx.stroke();
+ 
+  ctx.drawImage(sun, 0, 0, 600, 600);
+
+  window.requestAnimationFrame(draw);
+}
+
+init();
+ </script>
+
+</html>
+   
+
+
+
