@@ -37,6 +37,10 @@ html, body, div {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     background-color: #08090A; }
+ 
+   #global-img {margin-right: 200px;}
+   #usa-img  {margin-right:  300px;}
+   #canada-img {margin-right: 300px;}
   
   #universe {
     z-index: 1;
