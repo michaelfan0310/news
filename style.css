@@ -1376,6 +1376,9 @@ html, body, div {
       font-size: 58%; } }
   @media screen and (min-width: 1000px) {
   
+    #global-img {margin-right: 20px;}
+   #usa-img  {margin-right:  35px;}
+   #canada-img {margin-right: 40px;}
   
   
   
