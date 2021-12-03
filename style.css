@@ -65,7 +65,7 @@ html, body, div {
     position: absolute;
     top: 50%;
     left: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.089);
     border-radius: 50%;
     transform-style: preserve-3d;
     animation-name: orbit;
@@ -122,7 +122,7 @@ html, body, div {
     height: 2em;
     margin-top: -1em;
     margin-left: -1em;
-    border: 0.3em solid rgba(160, 147, 130, 0.7);
+    border: 0.3em solid rgba(160, 147, 130, 0.39);
     animation-iteration-count: infinite;
     animation-timing-function: linear; }
   
@@ -136,7 +136,7 @@ html, body, div {
     height: 2.2em;
     margin-top: -1.1em;
     margin-left: -1.1em;
-    border: 0.07em solid rgba(160, 147, 130, 0.5);
+    border: 0.07em solid rgba(160, 147, 130, 0.26);
     box-sizing: border-box;
     box-sizing: border-box; }
   
@@ -220,27 +220,7 @@ html, body, div {
   .view-2D .moon {
     transform: rotateX(90deg); }
   
-  /* --------------------------------------------------------------------------- 3D view */
-  .view-3D.zoom-large #sun {
-    transform-style: preserve-3d; }
   
-  .view-3D.zoom-large .orbit {
-    transform-style: preserve-3d; }
-  
-  .view-3D #solar-system {
-    transform: rotateX(75deg); }
-  
-  .view-3D #sun {
-    transform: rotateX(-90deg); }
-  
-  .view-3D .ring {
-    transform: rotateX(90deg); }
-  
-  .view-3D .planet,
-  .view-3D .moon {
-    transform: rotateX(0deg); }
-  
-  /* --------------------------------------------------------------------------- large zoom */
   .zoom-large #solar-system {
     width: 100%; }
   
@@ -926,56 +906,14 @@ html, body, div {
   
   #saturn .planet {
     animation-name: shadow-saturn; }
-  
-  @keyframes shadow-saturn {
-    0% {
-      box-shadow: inset 16px 0 5px rgba(0, 0, 0, 0.5);
-      /* LEFT */ }
-  
-    25% {
-      box-shadow: inset 80px -30px 50px rgba(0, 0, 0, 0.5);
-      /* BOTTOM */ }
-  
-    25.01% {
-      box-shadow: inset -94px -30px 40px rgba(0, 0, 0, 0.5);
-      /* BOTTOM */ }
-  
-    50% {
-      box-shadow: inset -16px 0 5px rgba(0, 0, 0, 0.5);
-      /* RIGHT */ }
-  
-    75% {
-      box-shadow: inset -2px 3px 2px rgba(0, 0, 0, 0.5);
-      /* TOP */ }
-  
-    100% {
-      box-shadow: inset 16px 0 5px rgba(0, 0, 0, 0.5);
-      /* LEFT */ } }
+
   
   .scaled.view-2D #saturn .planet,
   .scaled.view-3D #saturn .planet {
     box-shadow: inset -16px 0 5px rgba(0, 0, 0, 0.5);
     /* RIGHT */ }
   
-  /* --------------------------------------------------------------------------- saturn ring */
-  /*
-  
-  #saturn .ring           { animation-name:     shadow-saturn-ring; }
-  
-  @keyframes 
-  shadow-saturn-ring{ 0%   { box-shadow: inset -16px  0      4px   rgba(20, 40, 50, 0.45); opacity: .4; }
-                    25%    { box-shadow: inset -5px   -30px   12px  rgba(20, 40, 50, 0.3);  opacity: 1; }
-                    25.01% { box-shadow: inset 5px    -30px   12px  rgba(20, 40, 50, 0.3);  opacity: 1; }
-                    50%    { box-shadow: inset 16px   0      4px   rgba(20, 40, 50, 0.45);  opacity: .4; }
-                    75%    { box-shadow: inset 0      30px  50px  rgba(20, 40, 50, 0);  opacity: .3; }
-                    100%   { box-shadow: inset -16px  0      4px   rgba(20, 40, 50, 0.45);  opacity: .4; }
-                  }
-  
-  .scaled.view-2D #saturn .ring,
-  .scaled.view-3D #saturn .ring { box-shadow: inset 16px   0      4px   rgba(20, 40, 50, 0.6); }
-  
-  */
-  /* --------------------------------------------------------------------------- uranus ; pos: Left */
+ 
   #uranus .pos {
     left: 0;
     top: 50%; }
@@ -984,7 +922,7 @@ html, body, div {
     animation-name: shadow-uranus; }
   
   @keyframes shadow-uranus {
-    0% {
+    /* 0% {
       box-shadow: inset 8px 0 5px rgba(0, 0, 0, 0.5);
       /* LEFT */ }
   
@@ -1010,7 +948,7 @@ html, body, div {
   
   .scaled.view-2D #uranus .planet,
   .scaled.view-3D #uranus .planet {
-    box-shadow: inset -8px 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: inset -8px 0 5px rgba(0, 0, 0, 0.5); */
     /* RIGHT */ }
   
   /* --------------------------------------------------------------------------- neptune ; pos: Top */
