@@ -553,7 +553,24 @@ html, body, div {
     top: 50%; }
   
   #saturn .planet {
-    animation-name: shadow-saturn; }  
+    animation: shadow-saturn; }  
+    
+@keyframes shadow-saturn {
+  0% {
+    box-shadow: inset 16px 0 5px rgba(0, 0, 0, 0.5);
+    /* LEFT */
+  }  
+
+  50% {
+    box-shadow: inset -16px 0 5px rgba(0, 0, 0, 0.5);
+    /* RIGHT */
+  }  
+
+  100% {
+    box-shadow: inset 16px 0 5px rgba(0, 0, 0, 0.5);
+    /* LEFT */
+  }
+}
  
   #uranus .pos {
     left: 0;
@@ -622,18 +639,6 @@ html, body, div {
   
  --------------------------------------------------------------------------- navigation styles */
   
-  .sun #sun .infos,
-  .mercury #mercury .infos,
-  .venus #venus .infos,
-  .earth #earth .infos,
-  .mars #mars .infos,
-  .jupiter #jupiter .infos,
-  .saturn #saturn .infos,
-  .uranus #uranus .infos,
-  .neptune #neptune .infos {
-    display: block;
-    opacity: 1;
-    transform: rotateX(5deg); }
   
   .mercury #mercury.orbit,
   .venus #venus.orbit,
@@ -643,17 +648,12 @@ html, body, div {
   .saturn #saturn.orbit,
   .uranus #uranus.orbit,
   .neptune #neptune.orbit {
-    border: 1px solid rgba(255, 255, 255, 0.8); }
-  
-  .hide-UI h1,
-  .hide-UI #data,
-  .hide-UI dl.infos,
+    border: 1px solid rgba(255, 255, 255, 0.6); }
+   
   .hide-UI #controls {
     opacity: 0!important;
     margin-top: -30px; }
-  
-  .hide-UI #data {
-    margin-bottom: -30px; }
+ 
   
   .hide-UI .orbit {
     border: 1px solid rgba(255, 255, 255, 0.2) !important; }  
@@ -665,7 +665,7 @@ html, body, div {
     right: 12%;
     padding: 16px;
     width: 20%;
-    height: 20%; 
+    height: 25%; 
     color:#FB7209
     }
      
@@ -713,7 +713,8 @@ html, body, div {
   
   @media screen and (max-width: 299px) {
     #universe {
-      font-size: 20%; } }
+      font-size: 20%; } 
+    }
 
   @media screen and (min-width: 300px) {
     #universe {
