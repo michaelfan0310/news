@@ -14,7 +14,7 @@ usa.textContent=parseFloat(usa.textContent)+(Math.floor(Math.random() * 1.6) + 1
  var caNb=document.getElementById("caNb");
  var countCanaUp=function(){                 
                  
-           caNb.textContent=parseFloat(caNb.textContent)+(Math.floor(Math.random() * 2) + 3) ;};
+           caNb.textContent=parseFloat(caNb.textContent)+(Math.floor(Math.random() * 1.2) + 1) ;};
   
-            window.setInterval(countCanaUp,37500);
+            window.setInterval(countCanaUp,3000);
 
