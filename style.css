@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 html, body, div {
     border: 0;
@@ -53,7 +52,7 @@ html, body, div {
     position: relative;
     width: 100%;
     height: 100%;
-    /*perspective: 4000;*/ }
+    }
   
   #solar-system {
     position: absolute;
@@ -183,19 +182,15 @@ html, body, div {
     width: 100%; }
   
   .zoom-large.view-2D .scale-stretched #solar-system {
-    font-size: 26%; }
-  
+    font-size: 26%; } 
 
   
   .zoom-large.view-2D .scale-d #solar-system {
-    font-size: 22%; }
-  
+    font-size: 22%; } 
   
   
   .zoom-large.view-2D .scale-s #solar-system {
     font-size: 7%; }
-  
-
   
   /* --------------------------------------------------------------------------- close zoom */
   .zoom-close #solar-system {
@@ -216,8 +211,7 @@ html, body, div {
     margin-left: -145%; }
   
   .zoom-close.view-2D .scale-s #solar-system {
-    font-size: 40%; }
-  
+    font-size: 40%; } 
 
   
   .zoom-close .orbit,
@@ -292,7 +286,7 @@ html, body, div {
     animation-duration: 1977.49584s; }
   
   /* --------------------------------------------------------------------------- planets sizes */
-  /* --------------------------------------------------------------------------- stretched sizes */
+ 
   .scale-stretched #sun {
     font-size: 24em; }
   
@@ -323,74 +317,9 @@ html, body, div {
   .scale-stretched #neptune .planet {
     font-size: 4.9em; }
   
-  /* --------------------------------------------------------------------------- scaled sizes */
-  /*
-  (planets radius * 2) * ratio
-  */
-  /*$distanceScaleRatio:   0.000075em;*/
-  /* --------------------------------------------------------------------------- planets distance scale sizes */
-  .scale-d #sun {
-    font-size: 41.73048em; }
   
-  .scale-d #mercury .planet {
-    font-size: 0.14634em; }
-  
-  .scale-d #venus .planet {
-    font-size: 0.36306em; }
-  
-  .scale-d #earth .planet {
-    font-size: 0.38226em; }
-  
-  .scale-d #earth .moon {
-    font-size: 0.08226em; }
-  
-  .scale-d #mars .planet {
-    font-size: 0.20334em; }
-  
-  .scale-d #jupiter .planet {
-    font-size: 4.19466em; }
-  
-  .scale-d #saturn .planet {
-    font-size: 3.49392em; }
-  
-  .scale-d #uranus .planet {
-    font-size: 1.52172em; }
-  
-  .scale-d #neptune .planet {
-    font-size: 1.47732em; }
-  
-  /* --------------------------------------------------------------------------- planet size scale sizes */
-  .scale-s #sun {
-    font-size: 417.3048em; }
-  
-  .scale-s #mercury .planet {
-    font-size: 1.4634em; }
-  
-  .scale-s #venus .planet {
-    font-size: 3.6306em; }
-  
-  .scale-s #earth .planet {
-    font-size: 3.8226em; }
-  
-  .scale-s #earth .moon {
-    font-size: 0.8226em; }
-  
-  .scale-s #mars .planet {
-    font-size: 2.0334em; }
-  
-  .scale-s #jupiter .planet {
-    font-size: 41.9466em; }
-  
-  .scale-s #saturn .planet {
-    font-size: 34.9392em; }
-  
-  .scale-s #uranus .planet {
-    font-size: 15.2172em; }
-  
-  .scale-s #neptune .planet {
-    font-size: 14.7732em; }
-  
-  /* --------------------------------------------------------------------------- stretched orbits */
+  /* 
+--------------------------------------------------------------------------- stretched orbits */
   .scale-stretched #mercury.orbit {
     width: 32em;
     height: 32em;
@@ -443,119 +372,8 @@ html, body, div {
     width: 210em;
     height: 210em;
     margin-top: -105em;
-    margin-left: -105em; }
+    margin-left: -105em; } */
   
- --------------------------------------------------------------------------- distance scale orbits */
-  .scale-d #mercury.orbit {
-    width: 44.74176em;
-    height: 44.74176em;
-    margin-top: -22.37088em;
-    margin-left: -22.37088em; }
-  
-  .scale-d #venus.orbit {
-    width: 47.35737em;
-    height: 47.35737em;
-    margin-top: -23.67869em;
-    margin-left: -23.67869em; }
-  
-  .scale-d #earth.orbit {
-    width: 49.50959em;
-    height: 49.50959em;
-    margin-top: -24.75479em;
-    margin-left: -24.75479em; }
-  
-  .scale-d #mars.orbit {
-    width: 53.58356em;
-    height: 53.58356em;
-    margin-top: -26.79178em;
-    margin-left: -26.79178em; }
-  
-  .scale-d #jupiter.orbit {
-    width: 82.2042em;
-    height: 82.2042em;
-    margin-top: -41.1021em;
-    margin-left: -41.1021em; }
-  
-  .scale-d #saturn.orbit {
-    width: 115.91713em;
-    height: 115.91713em;
-    margin-top: -57.95857em;
-    margin-left: -57.95857em; }
-  
-  .scale-d #uranus.orbit {
-    width: 191.00471em;
-    height: 191.00471em;
-    margin-top: -95.50235em;
-    margin-left: -95.50235em; }
-  
-  .scale-d #neptune.orbit {
-    width: 275.64709em;
-    height: 275.64709em;
-    margin-top: -137.82355em;
-    margin-left: -137.82355em; }
-  
-  /* Moon */
-  .scale-d #earth .orbit {
-    width: 1em;
-    height: 1em;
-    margin-top: -0.5em;
-    margin-left: -0.5em; }
-  
-  /* --------------------------------------------------------------------------- size scale orbits */
-  .scale-s #mercury.orbit {
-    width: 441.3048em;
-    height: 441.3048em;
-    margin-top: -220.6524em;
-    margin-left: -220.6524em; }
-  
-  .scale-s #venus.orbit {
-    width: 457.3048em;
-    height: 457.3048em;
-    margin-top: -228.6524em;
-    margin-left: -228.6524em; }
-  
-  .scale-s #earth.orbit {
-    width: 473.3048em;
-    height: 473.3048em;
-    margin-top: -236.6524em;
-    margin-left: -236.6524em; }
-  
-  .scale-s #mars.orbit {
-    width: 489.3048em;
-    height: 489.3048em;
-    margin-top: -244.6524em;
-    margin-left: -244.6524em; }
-  
-  .scale-s #jupiter.orbit {
-    width: 561.3048em;
-    height: 561.3048em;
-    margin-top: -280.6524em;
-    margin-left: -280.6524em; }
-  
-  .scale-s #saturn.orbit {
-    width: 705.3048em;
-    height: 705.3048em;
-    margin-top: -352.6524em;
-    margin-left: -352.6524em; }
-  
-  .scale-s #uranus.orbit {
-    width: 817.3048em;
-    height: 817.3048em;
-    margin-top: -408.6524em;
-    margin-left: -408.6524em; }
-  
-  .scale-s #neptune.orbit {
-    width: 881.3048em;
-    height: 881.3048em;
-    margin-top: -440.6524em;
-    margin-left: -440.6524em; }
-  
-  /* Moon */
-  .scale-s #earth .orbit {
-    width: 1em;
-    height: 1em;
-    margin-top: -0.5em;
-    margin-left: -0.5em; }  
  
   #mercury .pos {
     left: 50%;
