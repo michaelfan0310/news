@@ -791,11 +791,8 @@ html, body, div {
   
     50% {
       box-shadow: inset 50px -15px 40px rgba(0, 0, 0, 0.5);
-      /* BOTTOM */ }
+      /* BOTTOM */ }  
   
-    50.01% {
-      box-shadow: inset -50px -15px 40px rgba(0, 0, 0, 0.5);
-      /* BOTTOM */ }
   
     75% {
       box-shadow: inset -12px 0 5px rgba(0, 0, 0, 0.5);
@@ -896,7 +893,7 @@ html, body, div {
     #pluto .planet {
       background-image: url(pluto.jpg); }
    
-  /* --------------------------------------------------------------------------- responsive sty*/
+  /* --------------------------------------------------------------------------- responsive */
   
   @media screen and (max-width: 299px) {
     #universe {
