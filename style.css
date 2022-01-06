@@ -194,7 +194,7 @@ html, body, div {
       transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg); } }
   
   /* --------------------------------------------------------------------------- opening */
-  .view-3D .opening #sun,
+  /* .view-3D .opening #sun,
   .view-3D .opening .orbit,
   .view-3D .opening .pos,
   .view-3D .opening .planet,
@@ -289,7 +289,7 @@ html, body, div {
   
   .zoom-close .pos {
     left: 100%!important;
-    top: 50%!important; }
+    top: 50%!important; } 
   
   /* --------------------------------------------------------------------------- data */
   /* --------------------------------------------------------------------------- speed */
