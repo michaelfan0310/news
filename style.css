@@ -98,7 +98,7 @@ html, body, div {
     }
   
   #sun {
-    background-color: #FB7209;
+    background-color: #e96805;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 0 60px rgba(255, 160, 60, 0.4); }
@@ -674,7 +674,7 @@ html, body, div {
     background-image: url(universe13.JPG); }
   
   #sun {
-    background-image: url(sun5.jpg); }
+    background-image: url(sun.gif); }
   
   #mercury .planet {
     background-image: url(mercury01.jpg); }
