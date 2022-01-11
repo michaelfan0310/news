@@ -12,6 +12,25 @@ html, body, div {
   
   body {
     line-height: 1; }
+
+     #news {
+    z-index: 99;
+    position: absolute;
+    top:10% ;
+    right: 9%;
+    padding: 16px;
+    width: 20%;
+    height: 25%; 
+    color:#FB7209
+    }
+
+.data1{
+  position:relative;
+  /* top:-160%;
+  left:-380%; */
+  width: 90%;
+  opacity: 0.9;
+}
   
   ol, ul {
     list-style: none; }
@@ -655,16 +674,7 @@ html, body, div {
   .hide-UI .orbit {
     border: 1px solid rgba(255, 255, 255, 0.2) !important; }  
   
-  #news {
-    z-index: 99;
-    position: absolute;
-    top:10% ;
-    right: 12%;
-    padding: 16px;
-    width: 20%;
-    height: 25%; 
-    color:#FB7209
-    }
+ 
      
   /* --------------------------------------------------------------------------- images */
   body {
