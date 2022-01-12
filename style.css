@@ -731,10 +731,20 @@ html, body, div {
       font-size: 36%; } }
   @media screen and (min-width: 600px) {
     #universe {
-      font-size: 44%; } }
+      font-size: 44%; } 
+    #news {
+    top:0.5% ;
+    right: 5%; 
+    font-size: 80%;   
+    }}
   @media screen and (min-width: 760px) {
     #universe {
-      font-size: 58%; } }
+      font-size: 58%; }
+    #news {
+    top:2% ;
+    right: 6%; 
+    font-size: 80%;   
+    } }
   @media screen and (min-width: 1000px) {   
   
     #controls {
@@ -745,18 +755,18 @@ html, body, div {
       right: 0px; } 
 
     #news {
-    top:0.5% ;
-    right: 5%; 
-    font-size: 80%;   
+    top:3% ;
+    right: 8%; 
+    font-size: 90%;   
     }
   }
   @media screen and (min-width: 1300px) {
     #universe {
       font-size: 100%; }
     #news {   
-    top:1% ;
-    right: 6%; 
-    font-size: 80%;   
+    top:5% ;
+    right: 9%; 
+    font-size: 100%;   
     } }
   @media screen and (min-width: 1600px) {
     .zoom-close .scale-d #solar-system {
