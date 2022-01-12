@@ -742,10 +742,22 @@ html, body, div {
       top: 12px; }    
   
     .controls-open #controls, .controls-close #controls {
-      right: 0px; } }
+      right: 0px; } 
+
+    #news {
+    top:0.5% ;
+    right: 5%; 
+    font-size: 80%;   
+    }
+  }
   @media screen and (min-width: 1300px) {
     #universe {
-      font-size: 100%; } }
+      font-size: 100%; }
+    #news {   
+    top:1% ;
+    right: 6%; 
+    font-size: 80%;   
+    } }
   @media screen and (min-width: 1600px) {
     .zoom-close .scale-d #solar-system {
       margin-left: -120%; } }  
